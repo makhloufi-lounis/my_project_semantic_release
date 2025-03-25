@@ -15,6 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
+    "commit": "git-cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -60,18 +61,24 @@
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "babel-loader": "^10.0.0",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-is": "^19.0.0",
+    "semantic-release": "^24.2.3",
     "size-limit": "^11.2.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.2",
-    "semantic-release": "^24.2.3"
+    "typescript": "^5.8.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/makhloufi-lounis/my_project_semantic_release.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
